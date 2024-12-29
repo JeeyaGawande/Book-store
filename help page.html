@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Book Shopping Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://wallpapercave.com/wp/wp5032075.jpg);
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            width: 80%;
+            margin: 2em auto;
+            background-color: white;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .section li {
+            margin-bottom: 1em;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 0.7em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Help Center - Book Shopping Website</h1>
+    </header>
+
+    <div class="container">
+        <section class="section" id="account">
+            <h2>Account Management</h2>
+            <ul>
+                <li><strong>How do I create an account?</strong><br>Click on the "Sign Up" button at the top right corner of the website. Fill in your details and follow the prompts.</li>
+                <li><strong>How do I reset my password?</strong><br>If you’ve forgotten your password, click on the "Forgot Password" link on the login page. Follow the instructions to reset it.</li>
+                <li><strong>How can I update my account information?</strong><br>Log into your account and go to "Account Settings" to update your email, address, and payment details.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="orders">
+            <h2>Orders and Shipping</h2>
+            <ul>
+                <li><strong>How do I place an order?</strong><br>Browse our collection of books, add items to your cart, and proceed to checkout when ready.</li>
+                <li><strong>How can I track my order?</strong><br>Once your order is shipped, you will receive a tracking number via email. You can track your order through our website or the courier's website.</li>
+                <li><strong>What shipping options are available?</strong><br>We offer standard and expedited shipping. Shipping costs will be calculated at checkout based on your location.</li>
+                <li><strong>How can I change or cancel my order?</strong><br>Orders can be modified or canceled within 24 hours of purchase. Please contact our support team for assistance.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="returns">
+            <h2>Returns and Refunds</h2>
+            <ul>
+                <li><strong>What is your return policy?</strong><br>We accept returns within 30 days of purchase. The book must be in its original condition.</li>
+                <li><strong>How do I return an item?</strong><br>Log into your account and go to "My Orders." Select the item you wish to return and follow the steps to initiate the return process.</li>
+                <li><strong>When will I receive my refund?</strong><br>Refunds are typically processed within 7-10 business days after we receive the returned item.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any further questions or need assistance, feel free to reach out to us. Fill out the form below or email us at <a href="mailto:support@bookstore.com">support@bookstore.com</a>.</p>
+
+            <form class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

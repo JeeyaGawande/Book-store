@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Shopping website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(250, 253, 195);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("https://wallpapercave.com/wp/wp5032075.jpg");
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(226, 228, 194, 0.85);
+            width: 300px;
+            margin: 100px auto;
+            border-radius : 10px;
+            max-width: 400px; 
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .input-group {
+            margin-bottom: 15px
+
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #62caea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0a5f64;
+        }
+        .input-group input:focus { 
+            border-color:hsl(187, 39%, 49%);
+            outline:none
+
+        }
+        .login-btn{
+            width: 100%;
+            padding: 10px;
+            background-color: hsl(189, 39%, 49%);
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: hsl(183, 40%, 45%);
+
+        }
+        signup-link {
+            text-align:center;
+            margin-top:10px;
+        }
+        .signup-link a {
+         color: #007BFF; 
+         text-decoration: underline;
+
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+        }
+        .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 80px;
+    }
+    .nav-bar .title{
+        color:#0000;
+        font-size: 67px
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h1 class="title">BOOK<span>WORLD</span></h1>
+            <p>BOOK SHOP</p>
+            <ul class="menu">
+               <li><a href="#">HOME</a></li>
+               <li><a href="#">CONTECT</a></li>
+               <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login_process.php" method="POST">
+            <!--Username field-->
+            <div class="input-group">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+            </div>
+            <!--Password field-->
+            <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"required>
+            <!--Mobile number-->
+            <input type="Text" placeholder="Enter mobile number">
+            </div>
+            <!--Login button-->
+            <botton type="submit" class="login btn"></botton>
+            
+
+            <input type="submit" value="Login">
+        </form>
+        <!--Signup link-->
+        <div class="signup-link">
+            <p>Don't have an account?<a href="signup.html">Sign up here </a></p>
+        </div>
+        <!-- Optional error message -->
+        <div class="error" id="error-message"></div>
+    </div>
+
+</body>
+</html>

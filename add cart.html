@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    background-image: url(https://wallpapercave.com/wp/wp5944045.jpg);
+    background-size: cover;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #495057;
+}
+
+
+.cart-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+ 
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.cart-item img {
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.cart-item .item-details {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.cart-item .item-price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.quantity button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.quantity button:hover {
+    background-color: #0056b3;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+}body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+
+    background-size: cover;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #495057;
+}
+
+
+.cart-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+ 
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.cart-item img {
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.cart-item .item-details {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.cart-item .item-price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.quantity button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.quantity button:hover {
+    background-color: #0056b3;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+}  
+</style>
+<body>
+
+    
+    <nav>
+        
+        <ul>
+            <li><a href="C:\Users\JEEYA\home page index.html">Home</a></li>
+            <li><a href="C:\Users\JEEYA\shopping page.html">Shop</a></li>
+            <li><a href="C:\Users\JEEYA\help page.html">Help</a></li>
+            
+            <li><a href="C:\Users\JEEYA\index.html">Login</a></li>
+           
+        </ul>
+    </nav>
+
+    
+    <main>
+        
+        <section class="cart-section">
+            <h2>Add books to cart</h2>
+            <div class="cart-items">
+              
+                <div class="cart-item">
+                    <img src="C:\Users\JEEYA\Desktop\the great adventure.jpg " alt="Book image ">
+                    <div class="item-details">
+                        <h3>The Great Adventure </h3>
+                        <p>Written by john de  </p>
+                        
+                        <div class="quantity">
+                            <button class="decrease" onclick="updateQuantity('item1', -1)">-</button>
+                            <input type="number" id="item1" value="1" min="1" readonly>
+                            <button class="increase" onclick="updateQuantity('item1', 1)">+</button>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <span id="price-item1">₹599</span>
+                    </div>
+                </div>
+
+            <div class="cart-summary">
+                <h3>Cart Summary</h3>
+                <p>Total Items: <span id="total-items">1</span></p>
+                <p>Total Price: <span id="total-price">₹599</span></p>
+                <button class="checkout-btn"><a href="C:\Users\JEEYA\Desktop\payment page.html">Continue payment</a></button>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; Perfect STORE. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="C:\Users\JEEYA\Desktop\contact us.html">Contact us</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+     
+function updateQuantity(itemId, change) {
+    const item = document.getElementById(itemId);
+    let currentQuantity = parseInt(item.value);
+    const newQuantity = Math.max(currentQuantity + change, 1);
+    item.value = newQuantity;
+
+    const pricePerItem = parseInt(document.getElementById(price-${itemId}).textContent.replace('₹', ''));
+    const totalItems = [...document.querySelectorAll('.cart-items input')].reduce((sum, input) => sum + parseInt(input.value), 0);
+    const totalPrice = totalItems * pricePerItem;
+
+    document.getElementById('total-items').textContent = totalItems;
+    document.getElementById('total-price').textContent = totalPrice;
+}
+
+    </script>
+</body>
+</html>

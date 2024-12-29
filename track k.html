@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    background-image: url(https://wallpapercave.com/wp/wp5608258.jpg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #e8173e;
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.order-info {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-info h2 {
+    font-size: 28px;
+    color: #2a7ae2;
+    margin-bottom: 15px;
+}
+
+.order-details p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.progress {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress h2 {
+    font-size: 28px;
+    color: #2a7ae2;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.progress-step {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #fff;
+    width: 120px;
+}
+
+.progress-step.active {
+    background-color: #2a7ae2;
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    z-index: -1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+footer a {
+    color: #f50909;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>Track Your Book Order</h1>
+            <p>Stay updated on your order's progress.</p>
+        </header>
+
+        <section class="order-info">
+            <h2>Order Details</h2>
+            <div class="order-details">
+                <p><strong>Order Number:</strong> 123456789</p>
+                <p><strong>Customer:</strong> Doremon</p>
+                <p><strong>Book Title:</strong> "The kargil Girl"</p>
+                <p><strong>Estimated Delivery:</strong> December 30, 2024</p>
+            </div>
+        </section>
+
+        <section class="progress">
+            <h2>Order Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-step step-1 active">Order Placed</div>
+                <div class="progress-step step-2">Processing</div>
+                <div class="progress-step step-3">Shipped</div>
+                <div class="progress-step step-4">Out for Delivery</div>
+                <div class="progress-step step-5">Delivered</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Need help? <a href="C:\Users\JEEYA\Desktop\contact us.html">Contact us</a></p>
+        </footer>
+    </div>
+</body>
+</html>
