@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your account</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: url('https://wallpapercave.com/wp/wp6302853.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: transparent; 
+        }
+
+        .holder {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            color: black; 
+        }
+
+        .holder h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #064ef6;
+        }
+
+        .holderlabel {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        .holder input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .holder button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .holder button:hover {
+            background-color: #0056b3;
+        }
+
+        .signup-link {
+            font-size: 18px;
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        @media (max-width: 400px) {
+            .signup {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form class="holder">
+            <h1>Create Account</h1>
+
+            <label class="holderlabel" for="username">Username</label>
+            <div class="inputholder">
+                <input id="username" type="text" class="info" placeholder="Type your username" required>
+            </div>
+
+            <label class="holderlabel" for="email">Email</label>
+            <div class="inputholder">
+                <input id="email" type="email" class="info" placeholder="Type your email address" required>
+            </div>
+
+            <label class="holderlabel" for="password">Password</label>
+            <div class="inputholder">
+                <input type="password" class="info" required placeholder="Type your password" id="password">
+            </div>
+
+            <label class="holderlabel" for="repassword">Re-Enter Password</label>
+            <div class="inputholder">
+                <input type="password" class="info" required placeholder="Re-enter your password" id="repassword">
+            </div>
+
+            <button type="submit" id="submitBtn">Sign Up</button>
+
+        </form>
+    </main>
+
+    <script>
+        document.querySelector('.holder').addEventListener('submit', function (e) {
+            e.preventDefault();
+            console.log("Form submission prevented");
+
+            const name = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const repss = document.getElementById('repassword').value;
+
+            // Password match check
+            if (password !== repss) {
+                alert("Passwords do not match! Please try again.");
+                return;
+            }
+
+            // Create user object
+            const user = {
+                Name: name,
+                Email: email,
+                Password: password
+            };
+
+            // Store user data in localStorage
+            localStorage.setItem(name, password);
+            console.log("User data saved:", user);
+
+            // Show success alert
+            alert("Your account has been created successfully!");
+            
+            // Redirect to login page after successful sign-up
+            window.location.href = 'neww login.html';
+        });
+    </script>
+</body>
+</html>
