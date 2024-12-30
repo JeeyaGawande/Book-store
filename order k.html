@@ -59,6 +59,7 @@
             padding: 10px 20px;
             border-radius: 5px;
             margin: 0 10px;
+            display: inline-block;
         }
         .footer {
             background-color: #2a2a2a;
@@ -66,6 +67,79 @@
             text-align: center;
             padding: 10px;
             margin-top: 40px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .buttons a {
+                padding: 8px 15px;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .total {
+                font-size: 16px;
+            }
+
+            h1, h2, h3 {
+                font-size: 1.2em;
+            }
+
+            .items-table th, .items-table td {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .order-summary p, .shipping-details p {
+                font-size: 14px;
+            }
+
+            .footer p {
+                font-size: 14px;
+            }
+        }
+
+        /* Very small devices (like phones in portrait mode) */
+        @media (max-width: 480px) {
+            header {
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .buttons a {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+
+            .container {
+                width: 100%;
+                margin: 10px;
+            }
+
+            .total {
+                font-size: 16px;
+            }
+
+            .items-table th, .items-table td {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            .order-summary p, .shipping-details p {
+                font-size: 12px;
+            }
+
+            .footer p {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -113,30 +187,27 @@
                         <td>1</td>
                         <td>350₹</td>
                     </tr>
-                   
-                    
                 </tbody>
             </table>
         </div>
 
         <div class="total">
-            <p><strong>Subtotal:</strong>350₹ </p>
-            <p><strong>Shipping Fee:</strong>Free Shipping </p>
-            <p><strong>Total:</strong>350₹ </p>
+            <p><strong>Subtotal:</strong> 350₹</p>
+            <p><strong>Shipping Fee:</strong> Free Shipping</p>
+            <p><strong>Total:</strong> 350₹</p>
         </div>
 
         <div class="buttons">
-            <a href="track k.html">Track Your Order</a>
-            <a href="shopping page.html">Continue Shopping</a>
-            <a href="add cart.html">View Order History</a>
-            <a href="feedback page.html">Feedback</a>
+            <a href="C:\Users\JEEYA\track k.html">Track Your Order</a>
+            <a href="C:\Users\JEEYA\shopping page.html">Continue Shopping</a>
+            <a href="C:\Users\JEEYA\add cart.html">View Order History</a>
+            <a href="C:\Users\JEEYA\feedback page.html">Feedback</a>
         </div>
     </div>
 
     <div class="footer">
         <p>&copy; 2024 BookShop. All rights reserved.</p>
-        <p><a href="policy.html" >Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Refund Policy</a></p>
-        
+        <p><a href="C:\Users\JEEYA\policy.html" >Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Refund Policy</a></p>
     </div>
 
 </body>

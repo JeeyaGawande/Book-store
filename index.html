@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to your account</title>
+    <title>Login - Shopping website</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -12,172 +14,155 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-image: url('https://t3.ftcdn.net/jpg/07/93/51/08/360_F_793510820_ERDrJAZQrfTimnVE5MZQDPFBPnP4spuG.jpg');
+            background-image: url(https://i.pinimg.com/736x/76/e8/40/76e8405832829f054affb3012486bc5a.jpg);
             background-size: cover;
         }
         .login-container {
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
-            padding: 2rem;
+            background-color: transparent;
+            background: cover;
+            padding: 20px;
             border-radius: 10px;
+            width: 300px;
+            margin: 100px auto;
             max-width: 400px;
-            width: 100%;
             text-align: center;
         }
-        h1 {
+        h2 {
             margin-bottom: 20px;
-            font-size: 24px;
-            font-family: 'Times New Roman', Times, serif;
         }
         label {
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
         }
-        input[type="text"], input[type="password"] {
+        .input-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"], input[type="password"], input[type="text"].mobile {
             width: 100%;
             padding: 8px;
             margin-bottom: 12px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        button[type="submit"] {
+        input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: rgb(101, 181, 241);
+            background-color: rgb(6, 123, 212);
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
-            margin-bottom: 10px;
         }
-        button[type="submit"]:hover {
-            background-color:#ccc;
+        input[type="submit"]:hover {
+            background-color: #0a5f64;
         }
-        .signup-link {
-            font-size: 18px;
-            color: rgb(255, 0, 0);
-            text-decoration: underline;
-            cursor: pointer;
+        .input-group input:focus { 
+            border-color: hsl(187, 39%, 49%);
+            outline: none;
         }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
+        .login-btn {
             width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-            padding-top: 100px;
-        }
-        .modal-content {
-            background-color: white;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 400px;
+            padding: 10px;
+            border: none;
+            color: rgb(231, 21, 21);
+            font-size: 32px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 33px;
             text-align: center;
         }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
+        .login-btn:hover {
+            background-color: rgb(255, 85, 85);
         }
-        .close:hover,
-        .close:focus {
-            color: black;
+        .btn-container a {
+            font-size: 20px;
             text-decoration: none;
-            cursor: pointer;
+            background-color: skyblue;
+            padding: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .signup-link {
+            margin-top: 10px;
+        }
+        .signup-link a {
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+        }
+        .error {
+            color: red;
+            text-align: center;
+        }
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 80px;
+        }
+        .nav-bar .title {
+            color: rgba(251, 8, 8, 0.99);
+            font-size: 67px;
+        }
+
+        
+        .logo {
+            width: 200px; 
+            margin-bottom: 40px;
+             
         }
     </style>
 </head>
 <body>
-    <main>
-        <div class="login-container">
-            <h1>Login to World Book Shop</h1>
-            <form class="holder">
-                <label for="username">
-                    Username
-                    <input id="username" type="text" required placeholder="Type your username">
-                </label>
+<div class="login-container">
 
-                <label for="password">
-                    Password
-                    <input id="password" type="password" required placeholder="Type your password">
-                </label>
+    <img src="C:\Users\JEEYA\Downloads\book.png" alt="Website Logo" class="logo">
 
-           <button type="submit" id="signin">Login</button>
-                <div class="signup-link">
-                    <a href="register.html">Sign up</a>
-                </div>
-            </form>
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="input-group">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
         </div>
-    </main>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Login Successful</h2>
-            <p>Welcome to the World Book Shop!</p>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
         </div>
+
+        <div class="input-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile" class="mobile" placeholder="Enter mobile number" required>
+        </div>
+
+        <div class="btn-container">
+            <button type="submit"><a href="C:\Users\JEEYA\home page index.html">Login</button></a>
+        </div>
+    </form>
+
+    <div class="signup-link">
+        <p>Don't have an account? <a href="C:\Users\JEEYA\Desktop\sign.html">Sign up here</a></p>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const loginForm = document.querySelector('.holder');
-            const modal = document.getElementById("myModal");
-            const closeBtn = document.querySelector(".close");
+    <div class="error" id="error-message"></div>
+</div>
 
-            if (!loginForm) {
-                console.error("Login form not found");
-                return;
-            }
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
 
-            loginForm.addEventListener('submit', function (e) {
-                e.preventDefault();
-                
-                const username = document.getElementById('username').value;
-                const password = document.querySelector('#password').value;
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const mobile = document.getElementById("mobile").value;
 
-                const storedUser = localStorage.getItem(username); // Assuming passwords are stored as simple text for now
-                
-                if (!storedUser) {
-                    alert('No user data found! Please sign up first.');
-                    loginForm.reset(); // Reset form fields
-                    return;
-                }
+        localStorage.setItem("username", username);
+        localStorage.setItem("password", password);
+        localStorage.setItem("mobile", mobile);
 
-                if (password === storedUser) {
-                    // Show the modal for successful login
-                    modal.style.display = "block";
-
-                    // Close modal after 2 seconds and redirect
-                    setTimeout(function() {
-                        modal.style.display = "none"; // Close modal
-                        window.location.href ='home.html'; // Redirect to home page
-                    }, 2000); // Wait for 2 seconds before redirect
-                } else {
-                    alert("Invalid username or password.");
-                    loginForm.reset(); // Reset form fields
-                }
-            });
-
-            // Close the modal when the user clicks on the "x" button
-            closeBtn.addEventListener("click", function() {
-                modal.style.display = "none";
-            });
-
-            // Close the modal if the user clicks anywhere outside of the modal content
-            window.addEventListener("click", function(event) {
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
-            });
-        });
-    </script>
+        alert("in valid passward.");
+    });
+</script>
 </body>
 </html>

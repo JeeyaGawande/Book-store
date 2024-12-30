@@ -67,6 +67,49 @@
             padding: 10px;
             margin-top: 40px;
         }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1, h2, h3 {
+                font-size: 18px;
+            }
+            .items-table th, .items-table td {
+                padding: 8px;
+            }
+            .total {
+                font-size: 16px;
+            }
+            .buttons a {
+                padding: 8px 15px;
+                font-size: 14px;
+                display: block;
+                margin: 10px 0;
+            }
+            .footer p {
+                font-size: 14px;
+            }
+        }
+
+        /* Further styling for very small screens */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            .order-summary, .shipping-details, .items-table, .total {
+                font-size: 14px;
+            }
+            .footer p {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -113,30 +156,27 @@
                         <td>1</td>
                         <td>599₹</td>
                     </tr>
-                   
-                    
                 </tbody>
             </table>
         </div>
 
         <div class="total">
-            <p><strong>Subtotal:</strong>599 </p>
-            <p><strong>Shipping Fee:</strong>Free Shipping </p>
-            <p><strong>Total:</strong>599₹ </p>
+            <p><strong>Subtotal:</strong> 599₹ </p>
+            <p><strong>Shipping Fee:</strong> Free Shipping </p>
+            <p><strong>Total:</strong> 599₹ </p>
         </div>
 
         <div class="buttons">
-            <a href="track order.html">Track Your Order</a>
-            <a href="shopping page.html">Continue Shopping</a>
-            <a href="add cart.html">View Order History</a>
-            <a href="feedback page.html">Feedback</a>
+            <a href="C:\Users\JEEYA\Desktop\track order.html">Track Your Order</a>
+            <a href="C:\Users\JEEYA\shopping page.html">Continue Shopping</a>
+            <a href="C:\Users\JEEYA\add cart.html">View Order History</a>
+            <a href="C:\Users\JEEYA\feedback page.html">Feedback</a>
         </div>
     </div>
 
     <div class="footer">
         <p>&copy; 2024 BookShop. All rights reserved.</p>
-        <p><a href="policy.html" >Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Refund Policy</a></p>
-        
+        <p><a href="C:\Users\JEEYA\policy.html">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Refund Policy</a></p>
     </div>
 
 </body>
