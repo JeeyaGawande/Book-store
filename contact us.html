@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Us Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url(https://i.pinimg.com/originals/72/8d/5b/728d5b83c541369c0a8fb052f2875cc1.jpg) no-repeat center;
+            background-size: cover;
+            color: #0c0101;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Contact Info Section */
+        .contactInfo {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .contactInfo .box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contactInfo .box .icon {
+            min-width: 60px;
+            height: 60px;
+            background: #0044cc;
+            color: #fff;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .contactInfo .box .text h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #0044cc;
+        }
+
+        .contactInfo .box .text p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Contact Form Section */
+        .contactForm {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contactForm h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #0044cc;
+        }
+
+        .contactForm .inputBox {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+            width: 100%;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            resize: none;
+        }
+
+        .contactForm .inputBox input:focus,
+        .contactForm .inputBox textarea:focus {
+            border-color: #0044cc;
+        }
+
+        .contactForm .inputBox span {
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            font-size: 1rem;
+            color: #aaa;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .contactForm .inputBox input:focus ~ span,
+        .contactForm .inputBox textarea:focus ~ span,
+        .contactForm .inputBox input:valid ~ span,
+        .contactForm .inputBox textarea:valid ~ span {
+            top: -20px;
+            left: 10px;
+            color: #0044cc;
+            font-size: 0.85rem;
+        }
+
+        .contactForm .inputBox input[type="submit"] {
+            background: #0044cc;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .contactForm .inputBox input[type="submit"]:hover {
+            background: #0033aa;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contactInfo, .contactForm {
+                max-width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>THE WORLD BOOK SHOP</p>
+        <div class="container">
+            <!-- Contact Info Section -->
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>444803 Amravati Road,<br>Vrindavan Nagar, Nagpur</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>8793039544</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>worldbook12@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form Section -->
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                      <input type="text" name="full_name" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="message" required></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
