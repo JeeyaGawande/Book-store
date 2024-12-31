@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Shopping website</title>
+    <link rel="stylesheet" href="">
+    <title>BOOK | SHOP</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(rgba(63, 27, 27, 0.7)),(rgba(0,0,0,0.7));
+            background-position: center;
+            background-image: url(https://m.media-amazon.com/images/I/61mlTKWRZxL.jpg);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav-bar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 80px;
+        }
+
+        .nav-bar .title{
+            color: #0000;
+            font-size: 67px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        span{
+            color: crimson;
+        }
+
+        .nav-bar p{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 60px;
+            color: black;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .menu li{
+            list-style: none;
+            display: inline-block;
+        }
+
+        .menu li a{
+            text-decoration: none;
+            color: black;
+            font-size: 27px;
+            font-weight: 600;
+            margin-left: 25px;
+            transition: .4s ease;
+        }
+
+        .menu li a:hover{
+            color: crimson;
+            padding: 5px 10px;
+            border: 2px solid red;
+        }
+
+        .home{
+            height: 400px;
+            padding: 70px;
+        }
+
+        .title-1{
+            font-size: 56px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .home p{
+            color: rgb(23, 3, 67);
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        .home button{
+            height: 40px;
+            color: black;
+            background: crimson;
+            font-size: 22px;
+            padding: 5px 30px;
+            margin-top:  20px ;
+            border-radius: 5px;
+            transition: .4s ease;
+            cursor: pointer;
+        }
+
+        .home button:hover{
+            background: none;
+            border: 2px solid crimson;
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            .nav-bar{
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+            .nav-bar .title{
+                font-size: 50px;
+            }
+            .nav-bar p{
+                font-size: 24px;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .menu li a{
+                font-size: 20px;
+                margin-left: 15px;
+            }
+            .home{
+                padding: 30px;
+                height: auto;
+            }
+            .title-1{
+                font-size: 40px;
+            }
+            .home p{
+                font-size: 16px;
+            }
+            .home button{
+                font-size: 18px;
+                padding: 5px 20px;
+            }
+        }
+
+        /* Extra small devices (phone portrait) */
+        @media (max-width: 480px) {
+            .nav-bar{
+                padding: 10px;
+            }
+            .nav-bar .title{
+                font-size: 35px;
+            }
+            .nav-bar p{
+                font-size: 20px;
+                margin-left: 10px;
+            }
+            .menu li a{
+                font-size: 18px;
+                margin-left: 10px;
+            }
+            .home{
+                padding: 20px;
+                height: auto;
+            }
+            .title-1{
+                font-size: 30px;
+            }
+            .home p{
+                font-size: 14px;
+            }
+            .home button{
+                font-size: 16px;
+                padding: 5px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h1 class="title">BOOK<span>WORLD</span></h1>
+            <p>Book shope</p>
+                <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="C:\Users\JEEYA\Desktop\contact us.html">CONTACT</a></li>
+                <li><a href="C:\Users\JEEYA\Desktop\about.html">ABOUT</a></li>
+                <li><bold><a href="C:\Users\JEEYA\help page.html">Help</a></bold></li>
+                </ul>
+        </div>
+        <div class="home">
+            <h1 class="title-1">EVERY<span>READING</span><br> JOUERNY <br>WITH US</h1>
+            <p>We provide all YOUR favourite books</p>
+            <button type="button"><a href="C:\Users\JEEYA\shopping page.html">Shop NOW</a></button>
+        </div>
+    </div>
+</body>
+</html>
